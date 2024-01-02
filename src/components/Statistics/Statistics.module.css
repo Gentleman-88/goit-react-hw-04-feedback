@@ -1,0 +1,15 @@
+.Statistics_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.statistics_item {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.no_feedback_item {
+    font-size: 20px;
+    font-style: italic;
+}
