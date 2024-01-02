@@ -28,8 +28,8 @@ export const App = () => {
 
   const countPositiveFeedbackPercentage = () => {
     // const { good } = this.state;
-    // const total = this.countTotalFeedback();
-    // return total === 0 ? 0 : Math.round((good / total) * 100);
+    const total = countTotalFeedback();
+    return total === 0 ? 0 : Math.round((good / total) * 100);
   };
 
     return (
@@ -48,7 +48,7 @@ export const App = () => {
               good={good}
               neutral={neutral}
               bad={bad}
-              total={countTotalFeedback()}
+              countTotalFeedback={countTotalFeedback()}
               positivePercentage={countPositiveFeedbackPercentage()}
             />
           </Section>
